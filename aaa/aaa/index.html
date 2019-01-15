@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<aside>
+		<section>
+			<header></header>
+			<div class="top iconfont icon-caidan"></div>
+			<ul class="u1" id="asideU1">
+				<li class="you">撮合管理
+					<ul class="u2" id="asideU2">
+						<li><span class="iconfont icon-xuqiu-hui"></span>需求池</li>
+						<li><span class="iconfont icon-xianxing_qingdan"></span>现贷清单</li>
+						<li><span class="iconfont icon-qichukucunluru"></span>录入产品</li>
+						<li><span class="iconfont icon-diannao"></span>帮客户传EXCEL</li>
+					</ul>
+				</li>
+				<li class="you">订单管理
+					<ul class="u2">
+						<li><span class="iconfont icon-xianxing_qingdan"></span>预订单列表</li>
+						<li><span class="iconfont icon-lanjiedingdan"></span>失效预订单</li>
+						<li><span class="iconfont icon-xianxing_qingdan"></span>订单列表</li>
+						<li><span class="iconfont icon-chakanpingzheng"></span>查看凭证</li>
+						<li><span class="iconfont icon-xianxing_qingdan"></span>自营订单列表</li>
+					</ul>
+				</li>
+				<li class="you">统计报表
+					<ul class="u2">
+						<li><span class="iconfont icon-xuqiu-hui"></span>需求池</li>
+						<li><span class="iconfont icon-xianxing_qingdan"></span>现贷清单</li>
+						<li><span class="iconfont icon-qichukucunluru"></span>录入产品</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</aside>
+	<article>
+		<header>
+			<div class="div1 lf">云服务管理平台</div>
+			<div class="div2 lf"><div class="iconfont icon-diannao lf img"></div>
+				<div class="lf text">WORKSHOP<br>个人工作台</div>
+			</div>
+			<div class="div2 lf"><div class="iconfont icon-tubiaozhizuomoban lf img"></div>
+				<div class="lf text">BOSS<br>业务运营支持</div>
+			</div>
+			<div class="div2 lf"><div class="iconfont icon-tuandui lf img"></div>
+				<div class="lf text">CRM<br>客户关系管理</div>
+			</div>
+			<div class="div3 rt"><div class="iconfont icon-dingbu_tuichu lf img1"></div>
+				<div class="lf text1">退出登录</div>
+			</div>
+			<div class="div3 rt usr"><div class="iconfont icon-tubiaozhizuomoban lf img1"></div>
+				<div class="lf text1">欢迎您：snto
+					<ul class="usrxl">
+						<li>个人资料</li>
+						<li>组织框架</li>
+						<li>权限分配</li>
+						<li>用户管理</li>
+					</ul>
+					
+				</div>
+			</div>
+		</header>
+		<div class="nav">
+			<div class="lf div1">BOSS >撮合管理</div>
+			<div class="lf div2"> >需求池</div>
+			<div class="rt div3 iconfont icon-tubiaozhizuomoban">录入客户</div>
+			<div class="rt div3 iconfont icon-xianxing_qingdan">订单列表</div>
+			<div class="rt div3 iconfont icon-wenjianshangchuan">帮客户产EXCEL</div>
+			<div class="rt div3 iconfont icon-qichukucunluru">录入产品</div>
+		</div>
+		<div class="nav1">
+			<div class="lf div1">铝箔</div>
+			<div class="lf div2">铝锭 <span class="ld rt">15</span></div>
+			<div class="lf div2">铝棒</div>
+		</div>
+		<div style="padding-left: 17px;margin-top:10px;" class="xx">
+			<select name="" id="" style="height: 26px">
+				<option value="" >有效需求</option>
+			</select>
+			<span class="iconfont icon-icon-1">新建</span>
+			<span class="iconfont icon-icon-">编辑</span>
+			<span class="iconfont icon-shanchu">删除</span>
+			<span class="iconfont icon-chakanyilaiguanxishu">撮合匹配</span>
+			<span class="iconfont icon-xianxing_qingdan">生产预订单</span>
+			<span class="iconfont icon-icon-">置为失效</span>
+			<span class="iconfont icon-Icon-daochu">导出</span>
+		</div>
+		<div class="inputBox">
+			<input type="text" placeholder="需求编号">
+			<input type="text" placeholder="公司名称">
+			<input type="text" placeholder="联系人">
+			<input type="tel" placeholder="手机">
+			<input type="text" placeholder="品名">
+			<input type="number" placeholder="牌号">
+			<input type="text" placeholder="宽度">
+			<input type="text" placeholder="厚度">
+			<input type="text" placeholder="价格">
+			<input type="number" placeholder="数量">
+			<select name="" id="">
+				<option value="">地区</option>
+			</select>
+			<select name="" id="">
+				<option value="">结算方式</option>
+			</select>
+			<select name="" id="">
+				<option value="">交易方式</option>
+			</select>
+		</div>
+		<div class="tableBox">
+			<table   width="100%" >
+				<tr>
+					<td width="10%" style="color: #666" >需求编号</td>
+					<td width="10%">公司名称</td>
+					<td>联系人</td>
+					<td width="10%">手机</td>
+					<td>交易员</td>
+					<td>品名</td>
+					<td>牌号</td>
+					<td>厚度</td>
+					<td>宽度</td>
+					<td>价格</td>
+					<td>数量</td>
+					<td>地区</td>
+					<td>交期</td>
+					<td>发布时间</td>
+					<td>报价</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+				<tr>
+					<td>XO10012</td>
+					<td>河南某有限公司</td>
+					<td>张三</td>
+					<td>15877454845</td>
+					<td>邓盈</td>
+					<td>烟箱</td>
+					<td>1235</td>
+					<td>0.007</td>
+					<td>500</td>
+					<td>19800</td>
+					<td>51</td>
+					<td>南京</td>
+					<td>两天</td>
+					<td>2分钟前</td>
+					<td>3条</td>
+				
+				</tr>
+			</table>
+		</div>
+		<div style="margin-left: 17px;" class="foot">
+			<div class="box">
+				<span><a href="script:">上一页</a></span>	
+				<span style="background-color: #009ACC;"><a href="script" style="color: white">1</a></span>
+				<span><a href="script">2</a></span>
+				<span><a href="script">3</a></span>
+				<span><a href="script">下一页</a></span>
+				<span><a href="script">尾页</a></span>
+				&nbsp;&nbsp;共100页&nbsp;&nbsp;转到
+				<input type="text" style="width: 20px;"> 页
+
+			</div>
+		</div>
+	</article>
+	<script>
+		var o1 = localStorage.getItem('o');
+		var arr1 = JSON.parse(o1)
+		var $asideU1li = $('#asideU1>li');
+		var $asideU2 = $('aside .u2');
+		var arr = [0,0,0];
+		if(arr1!=null){
+			arr=arr1;
+			for(var i = 0;i<arr1.length;i++){
+				if(arr1[i]==1){
+					$asideU1li.eq(i).attr('class','xia');
+					$asideU2.eq(i).show();
+				}
+			}
+		}
+		$asideU1li.click(function(){
+			var i = $(this).index();
+			if($asideU2.eq(i).is(":visible")){
+				$(this).attr('class','you');
+				$asideU2.eq(i).hide();
+				arr[i]=0;
+			}else{
+				$(this).attr('class','xia');
+				$asideU2.eq(i).show();
+				arr[i]=1;
+			}
+			localStorage.setItem('o',JSON.stringify(arr));
+		});
+		//伸缩
+		var $telescopicBtn = $('aside div').eq(0);
+		var $aside = $('aside');
+		var $article = $('article');
+		var $asideHead = $('aside header');
+		var $asideU2li = $('#asideU1 .u2').find('li');
+		console.log($asideU2li);
+		var telescopic = true;
+		$telescopicBtn.click(function(){
+			if(telescopic){
+				$aside.css('width','48px');
+				$article.css('left','48px');
+				$(this).css('width','48px');
+				$asideHead.css('background','url(img/02-收缩状态_01.jpg) no-repeat');
+				telescopic = false;
+
+			}else{
+				$aside.css('width','177px');
+				$article.css('left','177px');
+				$(this).css('width','177px');
+				$asideHead.css('background','url(img/01_01.jpg) no-repeat');
+				telescopic = true;	
+			}
+		});
+		var $article =  $('article');
+		$asideU2li.mouseover(function(){
+			if(!telescopic){
+				var newDiv  = $('<div></div>');
+				newDiv.attr('class','xq');
+				newDiv.text($(this).text());
+				$(this).append(newDiv)
+			}
+		});
+		$asideU2li.mouseout(function(){
+			 $(this).find('.xq').remove();
+		});
+	</script>
+</body>
+</html>
